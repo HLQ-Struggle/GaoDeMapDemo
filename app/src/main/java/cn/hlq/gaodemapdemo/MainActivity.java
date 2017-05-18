@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import cn.hlq.gaodemapdemo.map.GaoDeLocationActivity;
+import cn.hlq.gaodemapdemo.map.PoiSearchActivity;
 
 /**
  * create by heliquan at 2017年5月3日
@@ -25,6 +26,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GaoDeLocationActivity.class));
+            }
+        });
+        findViewById(R.id.id_main_gaode_search_poi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PoiSearchActivity.class));
             }
         });
     }

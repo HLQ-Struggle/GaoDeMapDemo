@@ -23,6 +23,7 @@ import cn.hlq.gaodemapdemo.R;
 
 /**
  * create by heliquan at 2017年5月4日23:26:59
+ * 基于高德地图实现显示以及定位
  */
 public class GaoDeLocationActivity extends Activity implements LocationSource, AMapLocationListener {
 
@@ -175,14 +176,14 @@ public class GaoDeLocationActivity extends Activity implements LocationSource, A
                 Date date = new Date(aMapLocation.getTime());
                 df.format(date);
                 // 如果不设置标志位，拖动地图时，它会不断将地图移动到当前的位置
-                if(isFirstLocation){
+                if (isFirstLocation) {
                     // 设置缩放级别
                     aMap.moveCamera(CameraUpdateFactory.zoomTo(17));
                     // 将地图移动到定位点
                     aMap.moveCamera(CameraUpdateFactory.changeLatLng(new LatLng(aMapLocation.getLatitude(), aMapLocation.getLongitude())));
                     // 点击定位按钮 能够将地图的中心移动到定位点
                     mListener.onLocationChanged(aMapLocation);
-                    isFirstLocation=false;
+                    isFirstLocation = false;
                 }
             } else {
                 // 定位失败时，可通过ErrCode（错误码）信息来确定失败的原因，errInfo是错误信息，详见错误码表。

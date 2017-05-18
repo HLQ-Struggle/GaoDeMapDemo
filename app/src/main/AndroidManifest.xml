@@ -39,13 +39,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".map.GaoDeLocationActivity">
-        </activity>
+        <!-- GaoDeLocationActivity -->
+        <activity
+            android:name=".map.GaoDeLocationActivity"/>
 
         <!-- 项目Service模块 -->
         <!-- GaoDeLocationService -->
         <service android:name="com.amap.api.location.APSService"/>
 
+        <activity android:name=".map.PoiSearchActivity">
+        </activity>
     </application>
 
 </manifest>

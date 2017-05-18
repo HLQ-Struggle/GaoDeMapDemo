@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_gaode_search_pressed" android:state_pressed="true"/>
+    <item android:color="@android:color/tab_indicator_text" android:state_checked="false" android:state_pressed="false"/>
+    <item android:color="@color/color_gaode_search_checked" android:state_checked="true" android:state_pressed="false"/>
+</selector>

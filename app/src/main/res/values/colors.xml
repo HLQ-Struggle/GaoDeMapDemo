@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="color_c3">#333333</color>
+    <color name="color_c6">#666666</color>
+    <color name="color_c9">#999999</color>
+
+    <color name="color_while">#FFFFFF</color>
+
+    <color name="color_android_transparent">@android:color/transparent</color>
+    <color name="color_android_indicator_text">@android:color/tab_indicator_text</color>
+
+    <color name="color_gaode_search_pressed">#DDd4d4d4</color>
+    <color name="color_gaode_search_checked">#fff2f2f2</color>
+
 </resources>

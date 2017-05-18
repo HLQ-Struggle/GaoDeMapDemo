@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GaoDeMapDemo</string>
+
+    <!-- PoiSearchActivity title hint -->
+    <string name="string_gaode_location_mine_location">我的位置</string>
+    <string name="string_gaode_location_search_hint">请输入检索关键字</string>
+    <string name="string_gaode_location_title_uptown">住宅区</string>
+    <string name="string_gaode_location_title_school">学校</string>
+    <string name="string_gaode_location_title_building">楼宇</string>
+    <string name="string_gaode_location_title_shopping">商场</string>
+
 </resources>

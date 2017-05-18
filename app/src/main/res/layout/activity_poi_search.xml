@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_while"
+    android:orientation="vertical"
+    tools:context="cn.hlq.gaodemapdemo.map.PoiSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/id_gaode_location_poi_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_while_bg"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="@string/string_gaode_location_search_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:padding="@dimen/dp_5"
+            android:singleLine="true"
+            android:textColor="@color/color_c6"
+            android:textColorHint="@color/color_c9"
+            android:textSize="@dimen/sp_14"/>
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/id_gaode_location_map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1.2"/>
+
+    <cn.hlq.gaodemapdemo.weight.SegmentedGroup
+        xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_gaode_location_segmented_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        segmentedgroup:sc_border_width="1dp"
+        segmentedgroup:sc_corner_radius="2dp">
+
+        <RadioButton
+            android:id="@+id/id_gaode_location_uptown"
+            style="@style/style_gaode_search_title"
+            android:checked="true"
+            android:text="@string/string_gaode_location_title_uptown"/>
+
+        <RadioButton
+            android:id="@+id/id_gaode_location_school"
+            style="@style/style_gaode_search_title"
+            android:text="@string/string_gaode_location_title_school"/>
+
+        <RadioButton
+            android:id="@+id/id_gaode_location_building"
+            style="@style/style_gaode_search_title"
+            android:text="@string/string_gaode_location_title_building"/>
+
+        <RadioButton
+            android:id="@+id/id_gaode_location_shopping"
+            style="@style/style_gaode_search_title"
+            android:text="@string/string_gaode_location_title_shopping"/>
+
+    </cn.hlq.gaodemapdemo.weight.SegmentedGroup>
+
+    <ListView
+        android:id="@+id/id_gaode_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+</LinearLayout>

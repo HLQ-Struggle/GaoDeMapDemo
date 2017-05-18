@@ -13,4 +13,10 @@
         android:layout_height="wrap_content"
         android:text="高德地图显示以及定位"/>
 
+    <Button
+        android:id="@+id/id_main_gaode_search_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="高德地图POI检索附近"/>
+
 </LinearLayout>
